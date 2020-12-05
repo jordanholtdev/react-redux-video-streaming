@@ -43,7 +43,9 @@ class StreamList extends React.Component {
             <Row>
               <Col>
                 <Card style={{ height: '100%', padding: '8px' }}>
-                  <Card.Title>{stream.title}</Card.Title>
+                  <Link to={`/streams/${stream.id}`}>
+                    <Card.Title>{stream.title}</Card.Title>
+                  </Link>
                   <Card.Text>{stream.description}</Card.Text>
                 </Card>
               </Col>
